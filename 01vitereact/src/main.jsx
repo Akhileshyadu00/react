@@ -1,16 +1,17 @@
 
 import { createRoot } from 'react-dom/client'
-import React from 'react';
-//import App from './App.jsx'
+//import React from 'react';
+
+import App from './App.jsx'
 
 
-function MyApp() {
-  return (
-    <div>
-      <h1>Custom React</h1>
-    </div>
-  )
-}
+// function MyApp() {
+//   return (
+//     <div>
+//       <h1>Custom React</h1>
+//     </div>
+//   )
+// }
 
 // const ReactElement = {
 //   type: "a",
@@ -21,23 +22,23 @@ function MyApp() {
 //   children: "Click to google"
 // }
 
-const anotherElement = (
-  <a href="https://google.com" target= "_blank"> Google</a>
-)
+// const anotherElement = (
+//   <a href="https://google.com" target= "_blank"> Google</a>
+// )
 
-const reactElement = React.createElement(
-  "a",
-  {
-    href: "https://google.com",
-    target: "_blank"
-  },
- " click to visit"
-)
+// const reactElement = React.createElement(
+//   "a",
+//   {
+//     href: "https://google.com",
+//     target: "_blank"
+//   },
+//  " click to visit"
+// )
 
 createRoot(document.getElementById('root')).render(
 
-    reactElement
-
+   // reactElement
+  <App />
 )
 
 //tag name  Upper
