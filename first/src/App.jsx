@@ -5,13 +5,15 @@ import './App.css'
 
 function App() {
 
-  let counter = 5;
+  let [counter, setCounter] = useState(15);
+
+  //let counter = 5;
 
   const addValue = () => {
     //console.log("Value Added", Math.random());
     console.log("Click", counter);
-    
-    counter = counter + 1;
+    //counter = counter + 1;
+    setCounter(counter + 1)
   }
 
   return (
@@ -19,10 +21,10 @@ function App() {
      <h1>Chai aur React</h1>
      <h3>Counter Value : ${counter}</h3>
 
-     <button onClick={addValue}>ADD VALUE</button>
+     <button onClick={addValue}>ADD VALUE {counter}</button>
      <br />
      <br />
-     <button>REMOVE VALUE</button>
+     <button>REMOVE VALUE {counter}</button>
 
      
     </>
