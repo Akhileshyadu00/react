@@ -5,9 +5,26 @@ import './App.css'
 
 function App() {
 
+  let counter = 5;
+
+  const addValue = () => {
+    //console.log("Value Added", Math.random());
+    console.log("Click", counter);
+    
+    counter = counter + 1;
+  }
+
   return (
     <>
      <h1>Chai aur React</h1>
+     <h3>Counter Value : ${counter}</h3>
+
+     <button onClick={addValue}>ADD VALUE</button>
+     <br />
+     <br />
+     <button>REMOVE VALUE</button>
+
+     
     </>
   )
 }
