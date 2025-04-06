@@ -2,7 +2,7 @@
 import './App.css'
 import Login from './Components/Login'
 import Profile from './Components/Profile'
-import UserContext from './context/UserContext'
+//import UserContext from './context/UserContext'
 import UserContextProvider from './context/UserContextProvider'
 
 function App() {
@@ -20,3 +20,5 @@ function App() {
 }
 
 export default App
+
+
